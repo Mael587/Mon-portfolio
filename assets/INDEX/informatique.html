@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Passion informatique - Portfolio de Mael Piechur" />
+  <meta name="author" content="Piechur Mael" />
+  <meta name="robots" content="index, follow" />
+  <title>Mael Piechur - Passion Informatique</title>
+  <link rel="icon" href="../../assets/images/logo.webp" type="image/x-icon" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <style>
+    html,
+    body {
+      overflow-x: hidden;
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background-color: #1f1f1f;
+      color: #ffffff;
+    }
+
+    main {
+      padding-top: 80px;
+    }
+
+    nav.navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1030;
+    }
+
+    .hero {
+      position: relative;
+    }
+
+    .hero-img {
+      width: 100%;
+      height: 90vh;
+      object-fit: cover;
+    }
+
+    .hero-text {
+      position: absolute;
+      bottom: 4rem;
+      left: 4rem;
+      color: #ff0303;
+      font-size: 2.8rem;
+      font-weight: 600;
+      text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.574);
+    }
+
+    .subheading {
+      text-align: center;
+      font-size: 1.4rem;
+      font-weight: 400;
+      margin-top: 2rem;
+      color: #dddddd;
+    }
+
+    .intro {
+      max-width: 800px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+      font-size: 1.4rem;
+      line-height: 1.8;
+      color: #dddddd;
+      text-align: justify;
+    }
+
+    .carousel {
+      max-width: 1200px;
+      margin: 4rem auto;
+      padding: 0 1rem;
+    }
+
+    .swiper-slide img {
+      width: 100%;
+      height: 700px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1rem;
+      font-size: 1rem;
+      color: #ffffff;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+      <a class="navbar-brand d-flex align-items-center" href="../../index.html" aria-label="Accueil">
+        <img src="../images/logo.webp" alt="Logo Mael Piechur" height="40" />
+        <span class="ms-2 fs-4 fw-bold">Mael Piechur</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Basculer la navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../../index.html">Retour à l'accueil</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Passion
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item active" href="informatique.html"><img src="../images/icons-resaux.png"
+                    alt="Informatique" width="20" height="20"> Informatique</a></li>
+              <li><a class="dropdown-item" href="voiture.html"><img src="../images/icons-bmw.png" alt="Voiture"
+                    width="20" height="20"> Voiture</a></li>
+              <li><a class="dropdown-item" href="vtt.html"><img src="../images/icons-downhill.png" alt="VTT" width="20"
+                    height="20"> VTT de descente</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <img src="../images/informatique.webp" alt="Setup informatique" class="hero-img" />
+      <div class="hero-text">« Créer. Comprendre. Innover. »</div>
+    </section>
+
+    <!-- SUBHEADING -->
+    <p class="subheading">L’informatique, c’est bien plus que des lignes de code.</p>
+
+    <!-- INTRO SECTION -->
+    <section class="intro">
+      <p>
+        Aujourd’hui, tout passe par l’informatique. C’est un domaine qui évolue vite, qui pousse à apprendre
+        constamment, et qui donne la liberté de créer à partir de rien. Ce que j’aime dans l’informatique, c’est ce
+        mélange entre logique et créativité.
+      </p>
+      <p>
+        Monter un PC, comprendre comment fonctionne un réseau, coder une appli, ou simplement bidouiller un système...
+        Chaque aspect est différent, mais tous partagent le même esprit : celui de vouloir comprendre comment ça marche,
+        et de pouvoir construire ses propres solutions.
+      </p>
+      <p>
+        Ce domaine est aussi une vraie porte d’entrée vers des communautés de passionnés, des projets en équipe, des
+        défis techniques. Que ce soit dans le web, le gaming, la cybersécurité ou le hardware, l’informatique est
+        partout, et c’est ce qui la rend si passionnante.
+      </p>
+    </section>
+
+    <!-- CAROUSEL SECTION -->
+    <section class="carousel">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="../images/montage.webp" alt="Composants de pc"></div>
+          <div class="swiper-slide"><img src="../images/code.webp" alt="Code sur écran sombre"></div>
+          <div class="swiper-slide"><img src="../images/setup.webp" alt="PC gaming setup moderne"></div>
+          <div class="swiper-slide"><img src="../images/gaming.webp" alt="Manette de console"></div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2025 Mael Piechur. Tous droits réservés.
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.mySwiper', {
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      }
+    });
+  </script>
+
+</body>
+
+</html>
