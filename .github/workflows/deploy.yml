@@ -1,0 +1,38 @@
+name: Déploiement du site (Pages)
+
+on:
+  push:
+    branches: ["main"]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le code
+        uses: actions/checkout@v4
+
+      # Ton site est statique (HTML/CSS/JS), on envoie tel quel
+      - name: Préparer l’artefact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .  # dossier racine où il y a index.html
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Déployer sur GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
